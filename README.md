@@ -1,1 +1,1 @@
-# blog-research-net-core
+This is the git repository about the research .NET Core
