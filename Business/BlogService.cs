@@ -12,7 +12,7 @@ namespace blogResearchNetCore.Business
         {
             _blogRepository = blogRepository;
         }
-        public Blog Add(Blog course)
+        public Blog Add(Blog blog)
         {
             throw new NotImplementedException();
         }
@@ -32,7 +32,7 @@ namespace blogResearchNetCore.Business
             throw new NotImplementedException();
         }
 
-        public void Update(Guid id)
+        public void Update(Blog blog)
         {
             throw new NotImplementedException();
         }

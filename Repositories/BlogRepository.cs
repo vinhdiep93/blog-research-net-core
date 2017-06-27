@@ -13,7 +13,7 @@ namespace blogResearchNetCore.Repositories
         {
             this.context = context;
         }
-        public Blog Add(Blog course)
+        public Blog Add(Blog blog)
         {
             throw new NotImplementedException();
         }
@@ -33,7 +33,7 @@ namespace blogResearchNetCore.Repositories
             throw new NotImplementedException();
         }
 
-        public void Update(Guid id)
+        public void Update(Blog blog)
         {
             throw new NotImplementedException();
         }

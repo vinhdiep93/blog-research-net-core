@@ -9,10 +9,10 @@ namespace blogResearchNetCore.Business
         IEnumerable<Blog> Get();
         Blog GetByID(Guid id);
 
-        void Update(Guid id);
+        void Update(Blog blog);
 
         void Delete(Guid id);
 
-        Blog Add(Blog course);
+        Blog Add(Blog blog);
     }
 }

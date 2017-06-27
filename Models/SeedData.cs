@@ -15,17 +15,14 @@ namespace blogResearchNetCore.Models
                 context.Blogs.AddRange(
                 new Blog
                 {
-                    Id = Guid.NewGuid(),
                     Title = "Title 1"
                 },
                 new Blog
                 {
-                    Id = Guid.NewGuid(),
                     Title = "Title 1"
                 },
                 new Blog
                 {
-                    Id = Guid.NewGuid(),
                     Title = "Title 1"
                 });
             };
