@@ -7,5 +7,7 @@ namespace blogResearchNetCore.Models
     {
         public string Category_Name {get; set; }
         public boolean Enable { get; set; }
+
+        public ICollection<Post> Posts { get; set; }
     }
 }
