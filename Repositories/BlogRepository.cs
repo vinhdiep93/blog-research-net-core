@@ -6,36 +6,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace blogResearchNetCore.Repositories
 {
-    public class BlogRepository : IBlogRepository
+    public class BlogRepository : GenericRepository<Blog>,IBlogRepository
     {
-        private BlogResearchContext context;
-        public BlogRepository(BlogResearchContext context)
+        public BlogRepository(DbContext context) : base(context)
+        {}
+
+        public override IEnumerable<Blog> Get()
         {
-            this.context = context;
-        }
-        public Blog Add(Blog blog)
-        {
-            throw new NotImplementedException();
+            return _entities.Set<Blog>().AsNoTracking().ToList();
         }
 
-        public void Delete(Guid id)
+        public Blog GetById(Guid id)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Blog> Get()
-        {
-            return context.Blogs.AsNoTracking().ToList();
-        }
-
-        public Blog GetByID(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Blog blog)
-        {
-            throw new NotImplementedException();
+            return _dbSet.Where(x => x.Id == id).FirstOrDefault();
         }
     }
 }

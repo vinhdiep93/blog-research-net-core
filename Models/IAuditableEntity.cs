@@ -1,0 +1,16 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace blogResearchNetCore.Models
+{
+    public interface IAuditableEntity
+    {
+        DateTime CreatedDate { get; set; }
+     
+        string CreatedBy { get; set; }
+ 
+        DateTime UpdatedDate { get; set; }
+             
+        string UpdatedBy { get; set; }
+    }
+}
