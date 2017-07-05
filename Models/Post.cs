@@ -10,7 +10,7 @@ namespace blogResearchNetCore.Models
         public string Article { get; set; }
         public datetime Date_Publish { get; set; }
         public string Banner_Image { get; set; }
-        public Status IsStatus { get; set; }
+        public Status Status { get; set; }
         public int View { get; set; }
         public string Tags { get; set; }
 

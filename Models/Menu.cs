@@ -8,6 +8,6 @@ namespace blogResearchNetCore.Models
         public string Title {get; set; }
         public string url { get; set; }
         public string icon_url { get; set; }
-        public Status IsStatus { get; set; }
+        public Status Status { get; set; }
     }
 }

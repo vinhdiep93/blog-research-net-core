@@ -7,7 +7,7 @@ namespace blogResearchNetCore.Models
     {
         public string Comment {get; set; }
         public Guid Reply_To_Id { get; set; }
-        public boolean Enable { get; set; }
+        public Status Status { get; set; }
 
         //public Guid Post_Id { get; set; }
         //public Guid User_Id { get; set; }

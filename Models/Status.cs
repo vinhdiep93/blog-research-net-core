@@ -7,14 +7,14 @@ namespace blogResearchNetCore.Models
     {
         Waiting,
         Active,
-        DeActive,
+        InActive,
         Deleted
     };
 
     public enum UserStatus{
         Waiting,
         Active,
-        DeActive,
+        InActive,
         Banned
     } 
     
