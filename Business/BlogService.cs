@@ -1,17 +1,16 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using blogResearchNetCore.Models;
-using Microsoft.EntityFrameworkCore;
+using blogResearchNetCore.Repositories;
 
-namespace blogResearchNetCore.Repositories
+namespace blogResearchNetCore.Business
 {
-    public class BlogRepository : IBlogRepository
+    public class BlogService : IBlogService
     {
-        private BlogResearchContext context;
-        public BlogRepository(BlogResearchContext context)
+        private IBlogRepository _blogRepository;
+        public BlogService(IBlogRepository blogRepository)
         {
-            this.context = context;
+            _blogRepository = blogRepository;
         }
         public Blog Add(Blog blog)
         {
@@ -25,7 +24,7 @@ namespace blogResearchNetCore.Repositories
 
         public IEnumerable<Blog> Get()
         {
-            return context.Blogs.AsNoTracking().ToList();
+            return _blogRepository.Get();
         }
 
         public Blog GetByID(Guid id)

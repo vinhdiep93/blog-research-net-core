@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using blogResearchNetCore.Repositories;
-using blogResearchNetCore.Service;
+using blogResearchNetCore.Business;
 
 namespace blogResearchNetCore
 {
@@ -32,13 +32,9 @@ namespace blogResearchNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddDbContext<BlogResearchContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient(typeof(IBlogRepository),typeof(BlogRepository));
             services.AddTransient(typeof(IBlogService),typeof(BlogService));
-            services.AddTransient(typeof(IUnitOfWork),typeof(UnitOfWork));
-            services.AddDbContext<BlogResearchContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-            // services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            // services.AddScoped(typeof(IEntityService<>), typeof(GenericRepository<>));
             services.AddMvc();
         }
 

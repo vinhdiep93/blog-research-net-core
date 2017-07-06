@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using blogResearchNetCore.Models;
 
-namespace blogResearchNetCore.Repositories
+namespace blogResearchNetCore.Business
 {
-    public interface IBlogRepository
+    public interface IBlogService
     {
         IEnumerable<Blog> Get();
         Blog GetByID(Guid id);
