@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using blogResearchNetCore.Business;
+using blogResearchNetCore.Service;
 using blogResearchNetCore.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,7 +20,7 @@ namespace blogResearchNetCore.Controllers
         [HttpGet]
         public IEnumerable<Blog> Get()
         {
-            var listBlog = _blogService.Get();
+            var listBlog = _blogService.GetAll();
             return listBlog.ToList();
         }
 

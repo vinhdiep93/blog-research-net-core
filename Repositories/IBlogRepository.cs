@@ -4,15 +4,8 @@ using blogResearchNetCore.Models;
 
 namespace blogResearchNetCore.Repositories
 {
-    public interface IBlogRepository
+    public interface IBlogRepository : IGenericRepository<Blog>
     {
-        IEnumerable<Blog> Get();
-        Blog GetByID(Guid id);
-
-        void Update(Blog blog);
-
-        void Delete(Guid id);
-
-        Blog Add(Blog blog);
+        Blog GetById(Guid id);
     }
 }

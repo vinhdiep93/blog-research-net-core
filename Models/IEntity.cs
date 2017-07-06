@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace blogResearchNetCore.Models
 {
-    public class Blog : AuditableEntity<Guid>
+    public interface IEntity<T>
     {
-        public string Title {get; set; }
+        T Id {get;set;}
     }
 }
