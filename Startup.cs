@@ -32,7 +32,7 @@ namespace blogResearchNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<BlogResearchContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<BlogResearchContext>(options => options.UseInMemoryDatabase());
             services.AddTransient(typeof(IBlogRepository),typeof(BlogRepository));
             services.AddTransient(typeof(IBlogService),typeof(BlogService));
             services.AddMvc();

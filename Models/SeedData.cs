@@ -19,11 +19,11 @@ namespace blogResearchNetCore.Models
                 },
                 new Blog
                 {
-                    Title = "Title 1"
+                    Title = "Title 2"
                 },
                 new Blog
                 {
-                    Title = "Title 1"
+                    Title = "Title 3"
                 });
             };
             context.SaveChanges();

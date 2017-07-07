@@ -1,5 +1,6 @@
-using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
+using System;
 
 namespace blogResearchNetCore.Models
 {
@@ -8,7 +9,7 @@ namespace blogResearchNetCore.Models
         public string Title {get; set; }
         public string Summary { get; set; }
         public string Article { get; set; }
-        public datetime Date_Publish { get; set; }
+        public DateTime Date_Publish { get; set; }
         public string Banner_Image { get; set; }
         public Status Status { get; set; }
         public int View { get; set; }
