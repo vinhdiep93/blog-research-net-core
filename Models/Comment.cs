@@ -6,7 +6,7 @@ namespace BlogNetCore.Models
     public class Comment : BaseEntity
     {
         public string Content {get; set; }
-        public Guid ReplyToId { get; set; }
+        public Guid ReplyToPostId { get; set; }
         public Status Status { get; set; }
 
         //public Guid Post_Id { get; set; }
