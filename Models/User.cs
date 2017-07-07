@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace blogResearchNetCore.Models
+namespace blogNetCore.Models
 {
     public class User : BaseEntity
     {
@@ -12,6 +12,6 @@ namespace blogResearchNetCore.Models
 
         public ICollection<Post> Posts { get; set; }
         public ICollection<Comment> Comments { get; set; }
-        public ICollection<User_Profile> User_Profiles { get; set; }
+        public ICollection<User_Profile> UserProfiles { get; set; }
     }
 }

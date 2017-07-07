@@ -2,14 +2,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using System;
 
-namespace blogResearchNetCore.Models
+namespace blogNetCore.Models
 {
     public class Post : BaseEntity
     {
         public string Title {get; set; }
         public string Summary { get; set; }
         public string Article { get; set; }
-        public DateTime Date_Publish { get; set; }
+        public DateTime DatePublish { get; set; }
         public string Banner_Image { get; set; }
         public Status Status { get; set; }
         public int View { get; set; }

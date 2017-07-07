@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace blogResearchNetCore.Models
+namespace blogNetCore.Models
 {
     public class User_Profile : BaseEntity
     {
