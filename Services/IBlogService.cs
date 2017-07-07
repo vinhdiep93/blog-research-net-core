@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using blogNetCore.Models;
+using BlogNetCore.Models;
 
-namespace blogNetCore.Business
+namespace BlogNetCore.Services
 {
     public interface IBlogService
     {

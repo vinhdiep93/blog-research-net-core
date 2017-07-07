@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using blogNetCore.Models;
+using BlogNetCore.Models;
 
-namespace blogNetCore.Repositories
+namespace BlogNetCore.Repositories
 {
     public interface IBlogRepository
     {

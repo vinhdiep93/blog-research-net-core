@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 
-namespace blogNetCore.Models
+namespace BlogNetCore.Models
 {
     public class Series : BaseEntity
     {

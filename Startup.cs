@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using blogNetCore.Models;
+using BlogNetCore.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using blogNetCore.Repositories;
-using blogNetCore.Business;
+using BlogNetCore.Repositories;
+using BlogNetCore.Services;
 
-namespace blogNetCore
+namespace BlogNetCore
 {
     public class Startup
     {

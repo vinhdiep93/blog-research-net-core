@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using System;
 
-namespace blogNetCore.Models
+namespace BlogNetCore.Models
 {
     public static class SeedData
     {

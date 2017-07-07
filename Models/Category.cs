@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace blogNetCore.Models
+namespace BlogNetCore.Models
 {
     public class Category : BaseEntity
     {
