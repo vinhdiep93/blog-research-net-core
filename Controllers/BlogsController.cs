@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using blogResearchNetCore.Business;
-using blogResearchNetCore.Models;
+using BlogNetCore.Services;
+using BlogNetCore.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace blogResearchNetCore.Controllers
+namespace BlogNetCore.Controllers
 {
     [Route("api/[controller]")]
     public class BlogsController : Controller

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using blogResearchNetCore.Models;
-using blogResearchNetCore.Repositories;
+using BlogNetCore.Models;
+using BlogNetCore.Repositories;
 
-namespace blogResearchNetCore.Business
+namespace BlogNetCore.Services
 {
     public class BlogService : IBlogService
     {

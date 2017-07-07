@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace blogResearchNetCore.Models
+namespace BlogNetCore.Models
 {
     public class BlogResearchContext: DbContext
     {

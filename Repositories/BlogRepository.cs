@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using blogResearchNetCore.Models;
+using BlogNetCore.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace blogResearchNetCore.Repositories
+namespace BlogNetCore.Repositories
 {
     public class BlogRepository : IBlogRepository
     {

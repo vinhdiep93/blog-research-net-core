@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace blogResearchNetCore.Models
+namespace BlogNetCore.Models
 {
     public enum Status
     {

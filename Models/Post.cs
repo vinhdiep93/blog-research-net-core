@@ -1,15 +1,16 @@
-using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
+using System;
 
-namespace blogResearchNetCore.Models
+namespace BlogNetCore.Models
 {
     public class Post : BaseEntity
     {
         public string Title {get; set; }
         public string Summary { get; set; }
         public string Article { get; set; }
-        public datetime Date_Publish { get; set; }
-        public string Banner_Image { get; set; }
+        public DateTime PublishedDate { get; set; }
+        public string BannerImage { get; set; }
         public Status Status { get; set; }
         public int View { get; set; }
         public string Tags { get; set; }

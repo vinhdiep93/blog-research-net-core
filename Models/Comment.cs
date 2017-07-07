@@ -1,12 +1,12 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace blogResearchNetCore.Models
+namespace BlogNetCore.Models
 {
     public class Comment : BaseEntity
     {
-        public string Comment {get; set; }
-        public Guid Reply_To_Id { get; set; }
+        public string Content {get; set; }
+        public Guid ReplyToPostId { get; set; }
         public Status Status { get; set; }
 
         //public Guid Post_Id { get; set; }

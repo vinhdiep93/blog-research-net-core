@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using blogResearchNetCore.Models;
+using BlogNetCore.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using blogResearchNetCore.Repositories;
-using blogResearchNetCore.Business;
+using BlogNetCore.Repositories;
+using BlogNetCore.Services;
 
-namespace blogResearchNetCore
+namespace BlogNetCore
 {
     public class Startup
     {
@@ -32,7 +32,7 @@ namespace blogResearchNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<BlogResearchContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<BlogResearchContext>(options => options.UseInMemoryDatabase());
             services.AddTransient(typeof(IBlogRepository),typeof(BlogRepository));
             services.AddTransient(typeof(IBlogService),typeof(BlogService));
             services.AddMvc();
